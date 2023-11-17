@@ -1,0 +1,54 @@
+.suikaGame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gameScoreBoard {
+    width: 25%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 30px;
+    /* border: 1px solid blue; */
+    border-radius: 10px;
+
+    background-color: #E6B143;
+}
+.gameScoreBoard span {
+    font-size: 25px;
+    color: #F7F4F5;
+}
+.gameBody {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 25px;
+}
+.gameBtnContainer {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 1rem;
+}
+.resetBtn {
+    width: 120px;
+    height: 40px;
+
+    background-color: #F7F4C8;
+
+    border-radius: 10px;
+
+    color: #E6B143;
+    font-weight: bold;
+    font-size: 15px;
+}
+.resetBtn:hover {
+    background-color: #E6B143;
+    color : #F7F4C8;
+}

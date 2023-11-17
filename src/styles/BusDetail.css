@@ -1,0 +1,104 @@
+.bus-detailContainer {
+    background: #f4f4f7;
+    margin-top: 1rem;
+    border-radius: 1rem;
+}
+
+.bus-detail-btnContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 2rem;
+    /* margin-top: 1rem; */
+    /* border-top: 1px solid rgb(192, 192, 192); */
+    border-bottom: 1px solid rgb(192, 192, 192);
+}
+.detailBtn {
+    position: relative;
+    padding: 0.6rem;
+    background: cornflowerblue;
+
+    border-radius: 5px;
+    border: 3px solid none;
+
+    box-shadow: none;
+
+    font-weight: bold;
+    font-size: 1rem;
+    color: white;
+}
+
+.bus-detail-list {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.bus-detail-list ul{
+    width: 100%;
+    list-style: none;
+    margin: 0; padding: 0;
+}
+.bus-detail-list ul li{
+    /* width: 100%; */
+    border-bottom: 1px solid rgb(192, 192, 192);
+    padding: 0.5rem;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.bus-detail-list ul li span {
+    /* font-size: 1.1rem; */
+    /* font-weight: bold; */
+}
+.bus-detail-list ul li span:nth-child(0) {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.busLine {
+    position: absolute;
+    left: 20px;
+    bottom: -1px;
+    width: 4px;
+    height: 105%;
+    background-color: cornflowerblue;
+}
+.busLine::before {
+    color: cornflowerblue;
+    content: '.';
+}
+.busimage {
+    display: none;
+    color: white;
+    background-color: red;
+    border-radius: 50%;
+    z-index: 1;
+    padding: 0.3rem;
+    line-height: normal;
+}
+.busimage .onload {
+    display: block;
+}
+
+.busDescription {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.5rem;
+}
+.busAreaName {
+    font-size: 1rem;
+    margin-right: 1.5rem;
+    font-weight: bold;
+}
+
+.onload {
+    display: block;
+}
+
+.upboundOn , .downOn{
+    background: green;
+    color : white;
+    border: 1px solid green;
+}

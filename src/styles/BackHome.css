@@ -1,0 +1,19 @@
+
+.backHome {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+.backHome-container {
+    width: 600px;
+    margin-top: 1.5rem;
+    margin-bottom: 2.5rem;
+    background-color: white;
+
+}
+.backHome-list {
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}

@@ -1,0 +1,919 @@
+[
+    {
+        "routeNo": "1",
+        "routeTp": "1  ",
+        "routeCd": "30300100",
+        "origin": "원내차고지",
+        "lastStop": "신안동"
+    },
+    {
+        "routeNo": "1",
+        "routeTp": "6  ",
+        "routeCd": "30300103",
+        "origin": "탑립동",
+        "lastStop": "관평중학교"
+    },
+    {
+        "routeNo": "1",
+        "routeTp": "5  ",
+        "routeCd": "30300001",
+        "origin": "충대농대종점",
+        "lastStop": "청벽산공원"
+    },
+    {
+        "routeNo": "100",
+        "routeTp": "2  ",
+        "routeCd": "69690113",
+        "origin": "품안마을아파트",
+        "lastStop": "입암리마을회관종점"
+    },
+    {
+        "routeNo": "1000",
+        "routeTp": "7  ",
+        "routeCd": "93000169",
+        "origin": "신안2리(안터)",
+        "lastStop": "반석역"
+    },
+    {
+        "routeNo": "1001",
+        "routeTp": "3  ",
+        "routeCd": "30300151",
+        "origin": "집현동",
+        "lastStop": "시청환승지"
+    },
+    {
+        "routeNo": "1002",
+        "routeTp": "3  ",
+        "routeCd": "30300129",
+        "origin": "충대농대",
+        "lastStop": "집현동"
+    },
+    {
+        "routeNo": "1004",
+        "routeTp": "7  ",
+        "routeCd": "93000179",
+        "origin": "반석역",
+        "lastStop": "장기중학교후문"
+    },
+    {
+        "routeNo": "1005",
+        "routeTp": "7  ",
+        "routeCd": "93000283",
+        "origin": "반석역",
+        "lastStop": "은하수공원"
+    },
+    {
+        "routeNo": "101",
+        "routeTp": "2  ",
+        "routeCd": "30300036",
+        "origin": "안산동",
+        "lastStop": "대성여고"
+    },
+    {
+        "routeNo": "102",
+        "routeTp": "2  ",
+        "routeCd": "30300037",
+        "origin": "수통골",
+        "lastStop": "대전역"
+    },
+    {
+        "routeNo": "103",
+        "routeTp": "2  ",
+        "routeCd": "30300038",
+        "origin": "수통골",
+        "lastStop": "동춘당"
+    },
+    {
+        "routeNo": "104",
+        "routeTp": "2  ",
+        "routeCd": "30300039",
+        "origin": "수통골",
+        "lastStop": "탄방역"
+    },
+    {
+        "routeNo": "105",
+        "routeTp": "2  ",
+        "routeCd": "30300040",
+        "origin": "충대농대",
+        "lastStop": "비래삼호A"
+    },
+    {
+        "routeNo": "106",
+        "routeTp": "2  ",
+        "routeCd": "30300041",
+        "origin": "목원대",
+        "lastStop": "비래동"
+    },
+    {
+        "routeNo": "107",
+        "routeTp": "2  ",
+        "routeCd": "30300042",
+        "origin": "대전역",
+        "lastStop": "동학사"
+    },
+    {
+        "routeNo": "108",
+        "routeTp": "2  ",
+        "routeCd": "30300043",
+        "origin": "충대농대",
+        "lastStop": "낭월차고지"
+    },
+    {
+        "routeNo": "11",
+        "routeTp": "4  ",
+        "routeCd": "30300005",
+        "origin": "수통골",
+        "lastStop": "용계동"
+    },
+    {
+        "routeNo": "113",
+        "routeTp": "2  ",
+        "routeCd": "30300045",
+        "origin": "서남부터미널",
+        "lastStop": "학하동"
+    },
+    {
+        "routeNo": "114",
+        "routeTp": "2  ",
+        "routeCd": "30300046",
+        "origin": "원내차고지",
+        "lastStop": "노은4단지"
+    },
+    {
+        "routeNo": "115",
+        "routeTp": "2  ",
+        "routeCd": "30300047",
+        "origin": "오월드",
+        "lastStop": "충대농대"
+    },
+    {
+        "routeNo": "116",
+        "routeTp": "2  ",
+        "routeCd": "30300048",
+        "origin": "안산동",
+        "lastStop": "월평주공"
+    },
+    {
+        "routeNo": "117",
+        "routeTp": "2  ",
+        "routeCd": "30300108",
+        "origin": "충대농대",
+        "lastStop": "학하동"
+    },
+    {
+        "routeNo": "119",
+        "routeTp": "2  ",
+        "routeCd": "30300049",
+        "origin": "안산동",
+        "lastStop": "효동"
+    },
+    {
+        "routeNo": "121",
+        "routeTp": "2  ",
+        "routeCd": "30300050",
+        "origin": "탑립동",
+        "lastStop": "대덕대학"
+    },
+    {
+        "routeNo": "2",
+        "routeTp": "1  ",
+        "routeCd": "30300002",
+        "origin": "봉산동",
+        "lastStop": "옥계동"
+    },
+    {
+        "routeNo": "2",
+        "routeTp": "6  ",
+        "routeCd": "30300150",
+        "origin": "신구교",
+        "lastStop": "신구교"
+    },
+    {
+        "routeNo": "20",
+        "routeTp": "4  ",
+        "routeCd": "30300137",
+        "origin": "대전역",
+        "lastStop": "장태산종점"
+    },
+    {
+        "routeNo": "2002",
+        "routeTp": "9  ",
+        "routeCd": "69690116",
+        "origin": "대전역동광장",
+        "lastStop": "신도안면사무소"
+    },
+    {
+        "routeNo": "201",
+        "routeTp": "2  ",
+        "routeCd": "30300051",
+        "origin": "원내차고지",
+        "lastStop": "대전IC"
+    },
+    {
+        "routeNo": "202",
+        "routeTp": "2  ",
+        "routeCd": "30300052",
+        "origin": "대전역",
+        "lastStop": "신도안APT"
+    },
+    {
+        "routeNo": "203",
+        "routeTp": "2  ",
+        "routeCd": "30300131",
+        "origin": "원내동",
+        "lastStop": "시청"
+    },
+    {
+        "routeNo": "21",
+        "routeTp": "4  ",
+        "routeCd": "30300006",
+        "origin": "서남부터미널",
+        "lastStop": "대둔산수락계곡"
+    },
+    {
+        "routeNo": "211",
+        "routeTp": "2  ",
+        "routeCd": "30300053",
+        "origin": "화물터미널",
+        "lastStop": "정부청사"
+    },
+    {
+        "routeNo": "212",
+        "routeTp": "2  ",
+        "routeCd": "30300127",
+        "origin": "화물터미널",
+        "lastStop": "가수원역"
+    },
+    {
+        "routeNo": "213",
+        "routeTp": "2  ",
+        "routeCd": "30300146",
+        "origin": "목원대",
+        "lastStop": "원내동"
+    },
+    {
+        "routeNo": "216",
+        "routeTp": "2  ",
+        "routeCd": "30300101",
+        "origin": "원내차고지",
+        "lastStop": "시청"
+    },
+    {
+        "routeNo": "22",
+        "routeTp": "4  ",
+        "routeCd": "30300007",
+        "origin": "서남부터미널",
+        "lastStop": "장안동종점"
+    },
+    {
+        "routeNo": "23",
+        "routeTp": "4  ",
+        "routeCd": "30300008",
+        "origin": "서남부터미널",
+        "lastStop": "원정동"
+    },
+    {
+        "routeNo": "24",
+        "routeTp": "4  ",
+        "routeCd": "30300009",
+        "origin": "서남부터미널",
+        "lastStop": "우명동종점"
+    },
+    {
+        "routeNo": "25",
+        "routeTp": "4  ",
+        "routeCd": "30300010",
+        "origin": "서남부터미널",
+        "lastStop": "봉곡동종점"
+    },
+    {
+        "routeNo": "26",
+        "routeTp": "4  ",
+        "routeCd": "30300011",
+        "origin": "서남부터미널",
+        "lastStop": "평촌동종점"
+    },
+    {
+        "routeNo": "27",
+        "routeTp": "4  ",
+        "routeCd": "30300012",
+        "origin": "서남부터미널",
+        "lastStop": "흑석동"
+    },
+    {
+        "routeNo": "3",
+        "routeTp": "1  ",
+        "routeCd": "30300104",
+        "origin": "급,원내동",
+        "lastStop": "DCC(대전컨벤션센터)"
+    },
+    {
+        "routeNo": "3",
+        "routeTp": "5  ",
+        "routeCd": "30300003",
+        "origin": "마을,군인아파트",
+        "lastStop": "한아름아파트"
+    },
+    {
+        "routeNo": "30",
+        "routeTp": "4  ",
+        "routeCd": "30300013",
+        "origin": "낭월차고지",
+        "lastStop": "대전역동광장"
+    },
+    {
+        "routeNo": "300",
+        "routeTp": "2  ",
+        "routeCd": "69690115",
+        "origin": "두마면사무소",
+        "lastStop": "무상사.항적산 치유의 숲"
+    },
+    {
+        "routeNo": "300",
+        "routeTp": "7  ",
+        "routeCd": "93000227",
+        "origin": "조치원역",
+        "lastStop": "신탄진역"
+    },
+    {
+        "routeNo": "301",
+        "routeTp": "2  ",
+        "routeCd": "30300054",
+        "origin": "봉산동",
+        "lastStop": "오월드"
+    },
+    {
+        "routeNo": "31",
+        "routeTp": "4  ",
+        "routeCd": "30300014",
+        "origin": "서남부터미널",
+        "lastStop": "원동네거리"
+    },
+    {
+        "routeNo": "311",
+        "routeTp": "2  ",
+        "routeCd": "30300055",
+        "origin": "신대차고지",
+        "lastStop": "오월드"
+    },
+    {
+        "routeNo": "312",
+        "routeTp": "2  ",
+        "routeCd": "30300056",
+        "origin": "목원대학교",
+        "lastStop": "뿌리공원"
+    },
+    {
+        "routeNo": "313",
+        "routeTp": "2  ",
+        "routeCd": "30300057",
+        "origin": "동신과학고",
+        "lastStop": "뿌리공원"
+    },
+    {
+        "routeNo": "314",
+        "routeTp": "2  ",
+        "routeCd": "30300058",
+        "origin": "오월드",
+        "lastStop": "동춘당"
+    },
+    {
+        "routeNo": "315",
+        "routeTp": "2  ",
+        "routeCd": "30300059",
+        "origin": "오월드",
+        "lastStop": "향촌아파트"
+    },
+    {
+        "routeNo": "316",
+        "routeTp": "2  ",
+        "routeCd": "30300060",
+        "origin": "대한통운",
+        "lastStop": "한빛고"
+    },
+    {
+        "routeNo": "317",
+        "routeTp": "2  ",
+        "routeCd": "30300061",
+        "origin": "대전역",
+        "lastStop": "대전역"
+    },
+    {
+        "routeNo": "318",
+        "routeTp": "2  ",
+        "routeCd": "30300062",
+        "origin": "오월드",
+        "lastStop": "대덕대학"
+    },
+    {
+        "routeNo": "32",
+        "routeTp": "4  ",
+        "routeCd": "30300015",
+        "origin": "서남부터미널",
+        "lastStop": "백암리"
+    },
+    {
+        "routeNo": "33-1",
+        "routeTp": "4  ",
+        "routeCd": "30300147",
+        "origin": "대전역",
+        "lastStop": "구완동"
+    },
+    {
+        "routeNo": "33-2",
+        "routeTp": "4  ",
+        "routeCd": "30300148",
+        "origin": "대전역",
+        "lastStop": "구완동"
+    },
+    {
+        "routeNo": "34",
+        "routeTp": "4  ",
+        "routeCd": "30300016",
+        "origin": "서남부터미널",
+        "lastStop": "대둔산휴게소"
+    },
+    {
+        "routeNo": "407",
+        "routeTp": "8  ",
+        "routeCd": "71000303",
+        "origin": "청주국제공항",
+        "lastStop": "신탄진과선교"
+    },
+    {
+        "routeNo": "41",
+        "routeTp": "4  ",
+        "routeCd": "30300017",
+        "origin": "서남부터미널",
+        "lastStop": "국립대전숲체원"
+    },
+    {
+        "routeNo": "42",
+        "routeTp": "4  ",
+        "routeCd": "30300018",
+        "origin": "서남부터미널",
+        "lastStop": "세동"
+    },
+    {
+        "routeNo": "43",
+        "routeTp": "9  ",
+        "routeCd": "69690109",
+        "origin": "서부터미널",
+        "lastStop": "입암리마을회관종점"
+    },
+    {
+        "routeNo": "45",
+        "routeTp": "9  ",
+        "routeCd": "69690110",
+        "origin": "건양대병원",
+        "lastStop": "도곡2리"
+    },
+    {
+        "routeNo": "46",
+        "routeTp": "4  ",
+        "routeCd": "30300021",
+        "origin": "서남부터미널",
+        "lastStop": "송정동"
+    },
+    {
+        "routeNo": "47",
+        "routeTp": "9  ",
+        "routeCd": "69690111",
+        "origin": "건양대병원",
+        "lastStop": "농소리"
+    },
+    {
+        "routeNo": "47-1",
+        "routeTp": "9  ",
+        "routeCd": "69690136",
+        "origin": "서남부터미널",
+        "lastStop": "농소리"
+    },
+    {
+        "routeNo": "48",
+        "routeTp": "9  ",
+        "routeCd": "69690112",
+        "origin": "충대농대",
+        "lastStop": "두마면사무소앞"
+    },
+    {
+        "routeNo": "5",
+        "routeTp": "5  ",
+        "routeCd": "30300004",
+        "origin": "마을,봉산동",
+        "lastStop": "목련아파트"
+    },
+    {
+        "routeNo": "501",
+        "routeTp": "2  ",
+        "routeCd": "30300063",
+        "origin": "비래동",
+        "lastStop": "마전"
+    },
+    {
+        "routeNo": "511",
+        "routeTp": "2  ",
+        "routeCd": "30300064",
+        "origin": "낭월공영차고지",
+        "lastStop": "푸르지오아파트"
+    },
+    {
+        "routeNo": "512",
+        "routeTp": "2  ",
+        "routeCd": "30300065",
+        "origin": "대한통운",
+        "lastStop": "구도동"
+    },
+    {
+        "routeNo": "513",
+        "routeTp": "2  ",
+        "routeCd": "30300066",
+        "origin": "낭월차고지",
+        "lastStop": "한빛고교"
+    },
+    {
+        "routeNo": "514",
+        "routeTp": "2  ",
+        "routeCd": "30300067",
+        "origin": "낭월차고지",
+        "lastStop": "만년동"
+    },
+    {
+        "routeNo": "52",
+        "routeTp": "4  ",
+        "routeCd": "30300025",
+        "origin": "대전역",
+        "lastStop": "하소룡골"
+    },
+    {
+        "routeNo": "60",
+        "routeTp": "4  ",
+        "routeCd": "30300026",
+        "origin": "대전역",
+        "lastStop": "직동종점"
+    },
+    {
+        "routeNo": "601",
+        "routeTp": "2  ",
+        "routeCd": "30300068",
+        "origin": "비래동",
+        "lastStop": "구암동기점지"
+    },
+    {
+        "routeNo": "602",
+        "routeTp": "2  ",
+        "routeCd": "30300069",
+        "origin": "비래동",
+        "lastStop": "월평주공"
+    },
+    {
+        "routeNo": "603",
+        "routeTp": "2  ",
+        "routeCd": "30300070",
+        "origin": "목원대학교",
+        "lastStop": "대전대학교"
+    },
+    {
+        "routeNo": "604",
+        "routeTp": "2  ",
+        "routeCd": "30300071",
+        "origin": "대전동신과학고",
+        "lastStop": "충렬사삼거리"
+    },
+    {
+        "routeNo": "605",
+        "routeTp": "2  ",
+        "routeCd": "30300072",
+        "origin": "대전대동문",
+        "lastStop": "갈마아파트"
+    },
+    {
+        "routeNo": "606",
+        "routeTp": "2  ",
+        "routeCd": "30300073",
+        "origin": "대전동신과학고",
+        "lastStop": "충렬사삼거리"
+    },
+    {
+        "routeNo": "607",
+        "routeTp": "2  ",
+        "routeCd": "30300074",
+        "origin": "비래동종점",
+        "lastStop": "옥천"
+    },
+    {
+        "routeNo": "608",
+        "routeTp": "2  ",
+        "routeCd": "30300130",
+        "origin": "서남부터미널",
+        "lastStop": "은어송A"
+    },
+    {
+        "routeNo": "61-1",
+        "routeTp": "4  ",
+        "routeCd": "30300027",
+        "origin": "대전대",
+        "lastStop": "냉천"
+    },
+    {
+        "routeNo": "61-2",
+        "routeTp": "4  ",
+        "routeCd": "30300028",
+        "origin": "대전대",
+        "lastStop": "천개동"
+    },
+    {
+        "routeNo": "611",
+        "routeTp": "2  ",
+        "routeCd": "30300075",
+        "origin": "신대차고지",
+        "lastStop": "세천공원"
+    },
+    {
+        "routeNo": "612",
+        "routeTp": "2  ",
+        "routeCd": "30300076",
+        "origin": "대전동신과학고",
+        "lastStop": "배재대학교"
+    },
+    {
+        "routeNo": "613",
+        "routeTp": "2  ",
+        "routeCd": "30300077",
+        "origin": "비래동",
+        "lastStop": "갈마아파트"
+    },
+    {
+        "routeNo": "614",
+        "routeTp": "2  ",
+        "routeCd": "30300078",
+        "origin": "대한통운",
+        "lastStop": "용두4"
+    },
+    {
+        "routeNo": "615",
+        "routeTp": "2  ",
+        "routeCd": "30300079",
+        "origin": "대한통운",
+        "lastStop": "정림동종점"
+    },
+    {
+        "routeNo": "616",
+        "routeTp": "2  ",
+        "routeCd": "30300080",
+        "origin": "대전역",
+        "lastStop": "대전역"
+    },
+    {
+        "routeNo": "617",
+        "routeTp": "2  ",
+        "routeCd": "30300081",
+        "origin": "비래동",
+        "lastStop": "변동5"
+    },
+    {
+        "routeNo": "618",
+        "routeTp": "2  ",
+        "routeCd": "30300082",
+        "origin": "대전동신과학고",
+        "lastStop": "DCC종점"
+    },
+    {
+        "routeNo": "619",
+        "routeTp": "2  ",
+        "routeCd": "30300083",
+        "origin": "대전동신과학고",
+        "lastStop": "서대전여고"
+    },
+    {
+        "routeNo": "62",
+        "routeTp": "4  ",
+        "routeCd": "30300029",
+        "origin": "대전대",
+        "lastStop": "방아실,항곡"
+    },
+    {
+        "routeNo": "620",
+        "routeTp": "2  ",
+        "routeCd": "30300084",
+        "origin": "낭월차고지",
+        "lastStop": "대한통운"
+    },
+    {
+        "routeNo": "622",
+        "routeTp": "2  ",
+        "routeCd": "30300144",
+        "origin": "비래동",
+        "lastStop": "서대전역"
+    },
+    {
+        "routeNo": "63",
+        "routeTp": "4  ",
+        "routeCd": "30300030",
+        "origin": "대전역",
+        "lastStop": "회남리"
+    },
+    {
+        "routeNo": "655",
+        "routeTp": "7  ",
+        "routeCd": "93000039",
+        "origin": "세종고속시외버스터미널",
+        "lastStop": "충남대학교"
+    },
+    {
+        "routeNo": "66",
+        "routeTp": "4  ",
+        "routeCd": "30300141",
+        "origin": "비래동",
+        "lastStop": "판암역"
+    },
+    {
+        "routeNo": "661",
+        "routeTp": "7  ",
+        "routeCd": "93000205",
+        "origin": "세종고속시외버스터미",
+        "lastStop": "송강마을아파트"
+    },
+    {
+        "routeNo": "691",
+        "routeTp": "7  ",
+        "routeCd": "93000211",
+        "origin": "세종고속시외버스터미",
+        "lastStop": "송강마을아파트"
+    },
+    {
+        "routeNo": "701",
+        "routeTp": "2  ",
+        "routeCd": "30300086",
+        "origin": "탑립동",
+        "lastStop": "대전고등학교"
+    },
+    {
+        "routeNo": "703",
+        "routeTp": "2  ",
+        "routeCd": "30300087",
+        "origin": "신탄진",
+        "lastStop": "정림동"
+    },
+    {
+        "routeNo": "704",
+        "routeTp": "2  ",
+        "routeCd": "30300088",
+        "origin": "원내차고지",
+        "lastStop": "보훈병원"
+    },
+    {
+        "routeNo": "705",
+        "routeTp": "2  ",
+        "routeCd": "30300089",
+        "origin": "신탄진",
+        "lastStop": "대전역"
+    },
+    {
+        "routeNo": "706",
+        "routeTp": "2  ",
+        "routeCd": "30300090",
+        "origin": "대한통운",
+        "lastStop": "목원대학교"
+    },
+    {
+        "routeNo": "71-1",
+        "routeTp": "4  ",
+        "routeCd": "30300118",
+        "origin": "동신고",
+        "lastStop": "용호동"
+    },
+    {
+        "routeNo": "71-2",
+        "routeTp": "4  ",
+        "routeCd": "30300119",
+        "origin": "용호동",
+        "lastStop": "직동종점"
+    },
+    {
+        "routeNo": "711",
+        "routeTp": "2  ",
+        "routeCd": "30300091",
+        "origin": "신탄진",
+        "lastStop": "대전역"
+    },
+    {
+        "routeNo": "712",
+        "routeTp": "2  ",
+        "routeCd": "30300092",
+        "origin": "탑립동",
+        "lastStop": "철도공착장"
+    },
+    {
+        "routeNo": "72-1",
+        "routeTp": "4  ",
+        "routeCd": "30300120",
+        "origin": "달전리",
+        "lastStop": "대청댐"
+    },
+    {
+        "routeNo": "72-2",
+        "routeTp": "4  ",
+        "routeCd": "30300098",
+        "origin": "달전리",
+        "lastStop": "대청댐"
+    },
+    {
+        "routeNo": "73",
+        "routeTp": "4  ",
+        "routeCd": "30300099",
+        "origin": "금탄동",
+        "lastStop": "대청댐종점"
+    },
+    {
+        "routeNo": "74",
+        "routeTp": "4  ",
+        "routeCd": "30300034",
+        "origin": "대한통운",
+        "lastStop": "장동2구"
+    },
+    {
+        "routeNo": "75",
+        "routeTp": "4  ",
+        "routeCd": "30300035",
+        "origin": "세종고속시외버스터미널",
+        "lastStop": "신탄진(보훈)"
+    },
+    {
+        "routeNo": "802",
+        "routeTp": "2  ",
+        "routeCd": "30300093",
+        "origin": "봉산동",
+        "lastStop": "보문산공원"
+    },
+    {
+        "routeNo": "911",
+        "routeTp": "2  ",
+        "routeCd": "30300094",
+        "origin": "충대농대",
+        "lastStop": "대전컨벤션센터"
+    },
+    {
+        "routeNo": "912",
+        "routeTp": "2  ",
+        "routeCd": "30300145",
+        "origin": "충대농대",
+        "lastStop": "자운대"
+    },
+    {
+        "routeNo": "916",
+        "routeTp": "2  ",
+        "routeCd": "30300095",
+        "origin": "서남부터미널",
+        "lastStop": "만년동"
+    },
+    {
+        "routeNo": "918",
+        "routeTp": "2  ",
+        "routeCd": "30300096",
+        "origin": "탑립동",
+        "lastStop": "시청"
+    },
+    {
+        "routeNo": "A2",
+        "routeTp": "7  ",
+        "routeCd": "93000319",
+        "origin": "반석역",
+        "lastStop": "오송역"
+    },
+    {
+        "routeNo": "A3",
+        "routeTp": "8  ",
+        "routeCd": "71000321",
+        "origin": "반석역",
+        "lastStop": "오송역"
+    },
+    {
+        "routeNo": "B1",
+        "routeTp": "3  ",
+        "routeCd": "30300128",
+        "origin": "대전역",
+        "lastStop": "오송역"
+    },
+    {
+        "routeNo": "B2",
+        "routeTp": "7  ",
+        "routeCd": "93000077",
+        "origin": "반석역",
+        "lastStop": "오송역"
+    },
+    {
+        "routeNo": "B4",
+        "routeTp": "7  ",
+        "routeCd": "93000318",
+        "origin": "반석역",
+        "lastStop": "오송역"
+    },
+    {
+        "routeNo": "특구1",
+        "routeTp": "2  ",
+        "routeCd": "30300149",
+        "origin": "한국과학기술원북문",
+        "lastStop": "한국과학기술원북문"
+    }
+]
