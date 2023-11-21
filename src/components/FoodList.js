@@ -17,7 +17,7 @@ function FoodList ({FoodList}) {
             setDiscriptionState(index)
             setOpen('open')
     }
-    console.log(FoodList)
+    // console.log(FoodList)
     // 가게 리스트를 보여주기 위한 코드
     return (
         <>

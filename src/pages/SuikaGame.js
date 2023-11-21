@@ -59,11 +59,6 @@ function SuikaGame() {
                 },
                 restitution : 0.4 ,
             })
-            // const newfruitLine = Bodies.rectangle(300, 400, 5, 600, {
-            //     isSleeping : true , 
-            //     render : {fillStyle : '#e6e6e6'} , 
-            // })
-            // currentLine = newfruitLine
             currentBody = body
             currentFruit = fruit
 
@@ -84,10 +79,6 @@ function SuikaGame() {
                                 x : currentBody.position.x - 10 ,
                                 y : currentBody.position.y ,
                             })
-                            // Body.setPosition(currentLine , {
-                            //     x : currentLine.position.x - 10 ,
-                            //     y : currentLine.position.y ,
-                            // })
                         }
                     }, 10)
                     break;
@@ -101,10 +92,6 @@ function SuikaGame() {
                                 x : currentBody.position.x + 10 ,
                                 y : currentBody.position.y ,
                             })
-                            // Body.setPosition(currentLine , {
-                            //     x : currentLine.position.x + 10 ,
-                            //     y : currentLine.position.y ,
-                            // })
                         }
                     }, 10)
                     break;
@@ -129,7 +116,6 @@ function SuikaGame() {
 
         }
         Events.on(engine, "collisionStart", (event) => {
-            // console.log(event)
             event.pairs.forEach((collision) => {
                 if(collision.bodyA.index === collision.bodyB.index) {
                     const index = collision.bodyA.index
@@ -173,19 +159,13 @@ function SuikaGame() {
         Render.run(render)
         Runner.run(engine)
     },[])
-    const reset = () => {
-        window.location.reload()
-    }
     return (
         <div className='suikaGame'>
             <Header/>
-            <GameScoreBoard totalScore={totalScore}/>
             <div className='gameBody'>
                 <canvas ref={canvasRef} />
             </div>
-            <div className='gameBtnContainer'>
-                <button className='resetBtn' onClick={reset}>다시하기</button>
-            </div>
+            <GameScoreBoard totalScore={totalScore}/>
             <Footer/>
         </div>
     )

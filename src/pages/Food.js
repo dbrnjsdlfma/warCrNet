@@ -11,7 +11,7 @@ function Food({userInfo}){
         const geo = new kakao.maps.services.Geocoder();
         let startAddressIndex = userInfo.address.lastIndexOf('동')
         const address = userInfo.address.substr(0,startAddressIndex + 1)
-        console.log(address)
+        // console.log(address)
         geo.addressSearch(address , function(result , status) {
             if(status === kakao.maps.services.Status.OK) {
                 const LatLng = new kakao.maps.LatLng(result[0].y, result[0].x)
@@ -121,7 +121,7 @@ function Food({userInfo}){
 
     const hashTagSelect = (e) => { // 해쉬태그를 클릭시 해당하는 메뉴를 포함하는 식당 데이터를 찾아 저장하기 위한 함수
         const keyword = e.target.innerText
-        console.log(keyword)
+        // console.log(keyword)
         axios.get(`http://127.0.0.1:5300/food/hashTag/type=${Foodkeyword}&tag=${keyword}/${userInfo.address}`)
         .then(res => {
             if(res.status === 200) {

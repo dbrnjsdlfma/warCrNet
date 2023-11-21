@@ -61,34 +61,12 @@ router.get('/detailPositon/:name', expressAsyncHandler(async(req, res, next) => 
 }))
 
 router.get('/search/:name', expressAsyncHandler(async(req, res, next) => {
-    const BusDatas = await BusArea.find({
-        $and : [
-            { BUSSTOP_NM : {$regex: req.params.name}} ,
-        ]
-    })
     const distinctBusDataValues = await BusArea.find({
         $and : [
             { BUSSTOP_NM : {$regex: req.params.name}} ,
 
         ]
     }).distinct('BUS_STOP_ID')
-
-    const test = await BusArea.aggregate([
-        {
-            $match : { BUSSTOP_NM : {$regex: req.params.name}} ,
-        },
-        {
-            $group : {
-                _id : "$BUSSTOP_NM" ,
-                BUS_STOP_ID : { $addToSet : "$BUS_STOP_ID" } ,
-            }  
-        },
-        {
-            $unwind : "$BUS_STOP_ID"
-        }
-    ])
-    console.log(test)
-
     const searchData = []
     console.log(distinctBusDataValues)
     if(distinctBusDataValues.length !==0) {
@@ -101,13 +79,22 @@ router.get('/search/:name', expressAsyncHandler(async(req, res, next) => {
         }
     }
     console.log(searchData)
-    //  else {
-    //     for(let i=0; i<=BusDatas.length-1; i++) {
-    //         searchData.push(BusDatas[i])
-    //     }
-    // }
-    // console.log(searchData)
     res.status(200).json({code : 200 , searchData})
+    // const test = await BusArea.aggregate([
+    //     {
+    //         $match : { BUSSTOP_NM : {$regex: req.params.name}} ,
+    //     },
+    //     {
+    //         $group : {
+    //             _id : "$BUSSTOP_NM" ,
+    //             BUS_STOP_ID : { $addToSet : "$BUS_STOP_ID" } ,
+    //         }  
+    //     },
+    //     {
+    //         $unwind : "$BUS_STOP_ID"
+    //     }
+    // ])
+    // console.log(test)
     // const distinctBusData = await BusArea.find({
     //     $and : [
     //         { BUSSTOP_NM : {$regex: req.params.name}} ,

@@ -35,7 +35,7 @@ function BusAreaList({busAreaData, setBusAreaData, busAreaPosition}) {
             for(let i=0; i<array.length; i+=num ) {
                 sliceArray.push(array.slice(i , i+num))
             }
-            console.log(sliceArray)
+            // console.log(sliceArray)
             setBusStateList(sliceArray)
         })
         busAreaPosition(item)
