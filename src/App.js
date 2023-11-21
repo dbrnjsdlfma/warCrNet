@@ -32,11 +32,11 @@ function App() {
       <Routes>
          <Route exact path='/' element={<Home  setUserInfo={setUserInfo} userInfo={userInfo}/>} />
          <Route exact path='/play' element={<Play userInfo={userInfo}/>} />
-         <Route exact path='/work' element={<Work userInfo={userInfo}/>} />
+         {/* <Route exact path='/work' element={<Work userInfo={userInfo}/>} /> */}
          <Route exact path='/food' element={<Food userInfo={userInfo}/>} />
-         <Route exact path='/news' element={<News userInfo={userInfo}/>} />
+         {/* <Route exact path='/news' element={<News userInfo={userInfo}/>} /> */}
          <Route exact path='/BackHome' element={<BackHome userInfo={userInfo}/>} />
-         <Route exact path='/lounge' element={<Lounge userInfo={userInfo}/>} />
+         {/* <Route exact path='/lounge' element={<Lounge userInfo={userInfo}/>} /> */}
          <Route exact path='/suikaGame' element={<SuikaGame userInfo={userInfo}/>} />
          <Route exact path='/register' element={<Register />} />
          <Route exact path='/modify' element={<Modify setUserInfo={setUserInfo} userInfo={userInfo}/>} />
