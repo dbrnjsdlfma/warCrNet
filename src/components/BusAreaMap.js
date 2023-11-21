@@ -34,7 +34,7 @@ function BusAreaMap({busAreaDetail, busAreaMapState}) {
                         width : "80%",
                         height : "100vh",
                     }}
-                    level={1}>
+                    level={3}>
                         <MapMarker
                             position={{
                                 lat : busAreaDetail.GPS_LATI ,
