@@ -11,6 +11,8 @@ const Bus = require('../models/Bus')
 
 const router = express.Router()
 
+let API_KEY = config.PUBLIC_DATA_POTAL_API_KEY
+
 router.get('/' , expressAsyncHandler(async(req, res, next) => {
     const busData = await Bus.find().sort({ routeNo : 1})
     if(!busData) {
@@ -21,7 +23,6 @@ router.get('/' , expressAsyncHandler(async(req, res, next) => {
 }))
 
 router.post('/detail/:id' , expressAsyncHandler(async(req, res, next) => {
-    const API_KEY = config.PUBLIC_DATA_POTAL_API_KEY
     const busRouteId = req.params.id
 
     if(busRouteId) {
@@ -40,7 +41,6 @@ router.post('/detail/:id' , expressAsyncHandler(async(req, res, next) => {
 }))
 
 router.post('/positionInfo/:id' , expressAsyncHandler(async(req, res, next) => {
-    const API_KEY = config.PUBLIC_DATA_POTAL_API_KEY
     const busRouteId = req.params.id
     if(busRouteId) {
         request (

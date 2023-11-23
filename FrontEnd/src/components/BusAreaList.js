@@ -8,7 +8,7 @@ function BusAreaList({busAreaData, setBusAreaData, busAreaPosition}) {
     const [discriptionState , setDiscriptionState] = useState(null)
     const [busStateList, setBusStateList] = useState([])
     const busStateOnClick = (e, item, index) => {
-        axios.get(`http://127.0.0.1:5300/busArea/busList/${item.BUS_NODE_ID}`)
+        axios.get(`${process.env.REACT_APP_API_SERVAR_ADRESS}/api/busArea/busList/${item.BUS_NODE_ID}`)
         .then(res => {
             const busDatas = res.data.elements[0].elements[1].elements
             // console.log(busDatas)
@@ -50,7 +50,7 @@ function BusAreaList({busAreaData, setBusAreaData, busAreaPosition}) {
             <div className='backHome-list'>
                 {busAreaData.length !==0 && busAreaData.map((item , index) => {
                     return (
-                        <div className="busArea-contents" onClick={(e) => busStateOnClick(e, item, index)}>
+                        <div key={index} className="busArea-contents" onClick={(e) => busStateOnClick(e, item, index)}>
                             <div className='busArea-List'>
                                 <span>{item.BUSSTOP_NM}</span>
                                 <p>{item.BUS_STOP_ID}</p>

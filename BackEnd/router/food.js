@@ -20,13 +20,13 @@ router.post('/' ,expressAsyncHandler (async(req, res, next)=> {
     }
 }))
 
-router.get('/category/:id/:address', expressAsyncHandler (async(req, res, next) => {
+router.get('/category&keyword=:keyword&address=:address', expressAsyncHandler (async(req, res, next) => {
     let startAddressIndex = req.params.address.lastIndexOf('동')
     console.log(startAddressIndex)
     const address = req.params.address.substr(0,startAddressIndex + 1)
     const categoryFoodList = await Foods.find({
         $and : [
-            { TOB_INFO : req.params.id },
+            { TOB_INFO : req.params.keyword },
             { ADDR : { $regex: address }}
         ]        
     })
@@ -38,17 +38,17 @@ router.get('/category/:id/:address', expressAsyncHandler (async(req, res, next) 
     }
 }))
 
-router.get('/search/:id/:address', expressAsyncHandler (async(req, res, next) => {
+router.get('/search&query=:query', expressAsyncHandler (async(req, res, next) => {
     const searchFoodList = await Foods.find({
         $and : [
-            { REST_NM : { $regex : req.params.id }},
+            { REST_NM : { $regex : req.params.query }},
             // { ADDR : { $regex: req.params.address }}
         ]
     })
-    if(searchFoodList.length === 0) {
-        res.status(400).json({code : 400 , message : "검색데이터를 찾을 수 없습니다."})
-    } else {
+    if(searchFoodList.length !== 0) {
         res.status(200).json({code : 200 , searchFoodList})
+    } else {
+        res.json({code : 400 , message : "검색데이터를 찾을 수 없습니다.", searchFoodList : []})
     }
 }))
 

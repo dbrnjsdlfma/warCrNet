@@ -4,7 +4,7 @@ import "../styles/BusSearch.css"
 function BusAreaSearch({setBusAreaData}) {
     const [ searchValue, setSearchValue ] = useState('')
     const busAreaSearch_API = async(busArea) => {
-        await axios.get(`http://127.0.0.1:5300/busArea/search/${busArea}`)
+        await axios.get(`${process.env.REACT_APP_API_SERVAR_ADRESS}/api/busArea/search/${busArea}`)
         .then(res => {
             if(res.data.code === 200) {
                 return setBusAreaData(res.data.searchData)
@@ -14,7 +14,7 @@ function BusAreaSearch({setBusAreaData}) {
         })
     }
     const busAreaList_API = async() => {
-        await axios.get('http://127.0.0.1:5300/busArea')
+        await axios.get(`${process.env.REACT_APP_API_SERVAR_ADRESS}/api/busArea`)
         .then(res => {
             if(res.data.code === 200) {
                 setBusAreaData(res.data.BusAreas)

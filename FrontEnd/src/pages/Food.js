@@ -7,24 +7,6 @@ const { kakao } = window
 
 function Food({userInfo}){
     const [address, setAddress] = useState([])
-    useEffect( () => {
-        const geo = new kakao.maps.services.Geocoder();
-        let startAddressIndex = userInfo.address.lastIndexOf('동')
-        const address = userInfo.address.substr(0,startAddressIndex + 1)
-        // console.log(address)
-        geo.addressSearch(address , function(result , status) {
-            if(status === kakao.maps.services.Status.OK) {
-                const LatLng = new kakao.maps.LatLng(result[0].y, result[0].x)
-                setAddress([
-                    {
-                        REST_NM : '중심지',
-                        LAT : LatLng.Ma,
-                        LOT : LatLng.La,
-                    }
-                ])
-            }
-        })
-    },[userInfo])
     // 전체 가게 리스트를 저장하기 위한 스테이트 값
     const [FoodListData, setFoodListData] = useState([])
 
@@ -42,13 +24,33 @@ function Food({userInfo}){
 
     // 메뉴 선택을 한 타이틀 값을 저장하기 위한 스테이트 값
     const [menuSelectTitle, setMenuSelectTitle] = useState(null)
-    useEffect( ()=> { // 첫 로딩시 사용할 list 불러오기
-        axios.post(`http://127.0.0.1:5300/food`, {
+
+    const foodApi = () => {
+        axios.post(`${process.env.REACT_APP_API_SERVAR_ADRESS}/api/food`, {
             address : userInfo.address
         })
         .then(res => {
             // console.log(res)
             setFoodListData(res.data.foodList)
+        })
+    }
+    useEffect( ()=> { // 첫 로딩시 사용할 list 불러오기
+        foodApi()
+        const geo = new kakao.maps.services.Geocoder();
+        let startAddressIndex = userInfo.address.lastIndexOf('동')
+        const address = userInfo.address.substr(0,startAddressIndex + 1)
+        // console.log(address)
+        geo.addressSearch(address , function(result , status) {
+            if(status === kakao.maps.services.Status.OK) {
+                const LatLng = new kakao.maps.LatLng(result[0].y, result[0].x)
+                setAddress([
+                    {
+                        REST_NM : '중심지',
+                        LAT : LatLng.Ma,
+                        LOT : LatLng.La,
+                    }
+                ])
+            }
         })
     },[])
     useEffect( (e) => { // 키보드 엔터를 누를시 검색되게 하는 코드
@@ -79,7 +81,7 @@ function Food({userInfo}){
             const categoryKeyword = parentLI.children[1].innerText
             if(categoryKeyword === '카페') {
                 const categoryKeywordupdate = '카페·디저트'
-                axios.get(`http://127.0.0.1:5300/food/category/${categoryKeywordupdate}/${userInfo.address}`)
+                axios.get(`${process.env.REACT_APP_API_SERVAR_ADRESS}/api/food/category&keyword=${categoryKeywordupdate}&address=${userInfo.address}`)
                 .then(res => {
                     setFoodkeyword(categoryKeyword)
                     setFoodListData(res.data.categoryFoodList)
@@ -87,7 +89,7 @@ function Food({userInfo}){
                     setMapState(true)
                 })
             } else {
-                axios.get(`http://127.0.0.1:5300/food/category/${categoryKeyword}/${userInfo.address}`)
+                axios.get(`${process.env.REACT_APP_API_SERVAR_ADRESS}/api/food/category&keyword=${categoryKeyword}&address=${userInfo.address}`)
                 .then(res => {
                     setFoodkeyword(categoryKeyword)
                     setFoodListData(res.data.categoryFoodList)
@@ -103,14 +105,17 @@ function Food({userInfo}){
     const keywordSearch = (e) => {
         const searchKeyword = document.querySelector('.keyword')
         if(searchKeyword.value !== null && searchKeyword.value !== '') {
-            axios.get(`http://127.0.0.1:5300/food/search/${searchKeyword.value}/${userInfo.address}`)
+            axios.get(`${process.env.REACT_APP_API_SERVAR_ADRESS}/api/food/search&query=${searchKeyword.value}`)
             .then(res => {
-                setFoodSearchData(res.data.searchFoodList)
-                setLoadState(true)
-                setMapState(false)
+                console.log(res)
+                if(res.status === 200) {
+                    setFoodSearchData(res.data.searchFoodList)
+                    setLoadState(true)
+                    setMapState(false)
+                }
             })
             .catch(function(error) {
-                if(error.response.data.code === 400) {
+                if(error.response.status === 400) {
                     alert(error.response.data.message)
                 }
             })
@@ -122,7 +127,7 @@ function Food({userInfo}){
     const hashTagSelect = (e) => { // 해쉬태그를 클릭시 해당하는 메뉴를 포함하는 식당 데이터를 찾아 저장하기 위한 함수
         const keyword = e.target.innerText
         // console.log(keyword)
-        axios.get(`http://127.0.0.1:5300/food/hashTag/type=${Foodkeyword}&tag=${keyword}/${userInfo.address}`)
+        axios.get(`${process.env.REACT_APP_API_SERVAR_ADRESS}/api/food/hashTag/type=${Foodkeyword}&tag=${keyword}/${userInfo.address}`)
         .then(res => {
             if(res.status === 200) {
                 setFoodSearchData(res.data.hashTagFoodList)
@@ -177,4 +182,4 @@ function Food({userInfo}){
     )
 }
 
-export default Food
+export default React.memo(Food)

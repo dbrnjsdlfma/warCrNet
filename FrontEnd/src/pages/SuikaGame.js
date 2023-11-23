@@ -18,10 +18,15 @@ function SuikaGame() {
                 wireframes : false ,
                 background : "#F7F4C8" ,
                 width : 620 ,
-                height : 850 ,
+                height : 750 ,
             }
         })
         const world = engine.world
+        
+        const topWall = Bodies.rectangle(0, 0, 1920, 30, {
+            isStatic : true ,
+            render : { fillStyle: "#E6B143" } ,
+        })
 
         const leftWall = Bodies.rectangle(15, 395, 30, 790, {
             isStatic : true ,
@@ -31,7 +36,7 @@ function SuikaGame() {
             isStatic : true ,
             render : { fillStyle: "#E6B143" } ,
         })
-        const ground = Bodies.rectangle(310, 820, 620, 60, {
+        const ground = Bodies.rectangle(310, 720, 620, 60, {
             isStatic : true ,
             render : { fillStyle: "#E6B143" } ,
         })
@@ -51,7 +56,7 @@ function SuikaGame() {
         const addFruit = () => {
             const index = Math.floor(Math.random() * 5)
             const fruit = FRUITS_BASE[index]
-            const body = Bodies.circle(300, 50, fruit.radius, {
+            const body = Bodies.circle(300, 90, fruit.radius, {
                 index: index ,
                 isSleeping : true, 
                 render: {
@@ -155,7 +160,7 @@ function SuikaGame() {
             })
         })
         addFruit()
-        World.add(world, [leftWall, rightWall, ground, topLine])
+        World.add(world, [leftWall, rightWall, ground, topLine, topWall])
         Render.run(render)
         Runner.run(engine)
     },[])

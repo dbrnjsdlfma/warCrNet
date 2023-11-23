@@ -1,7 +1,6 @@
 import React, {useEffect , useState, useRef} from "react";
 import FoodDiscription from "./FoodDiscription"
 function FoodSearchComponent({FoodList, selectMenu}) {
-    console.log(FoodList)
     const [discriptionState , setDiscriptionState] = useState(null)
     const [discription, setDiscription] = useState([])
 
@@ -21,7 +20,6 @@ function FoodSearchComponent({FoodList, selectMenu}) {
     },[selectMenu])
 
     const showDiscription = (e, list, index) => {  // 선택된 리스트에 상세정보가 나오는 코드
-        console.log(e.target)
         setDiscription(list)
         setDiscriptionState(index)
         e.preventDefault()
@@ -66,7 +64,7 @@ function FoodSearchComponent({FoodList, selectMenu}) {
                                     </div>
                                 )
                             })}
-                            {FoodList[0].REST_NM === '중심지' && <div className='foodErrorDiv'>데이터를 찾을 수 없습니다</div>}
+                            {FoodList.length === 0 && <div className='foodErrorDiv'>데이터를 찾을 수 없습니다</div>}
                         </div>
                     </div>    
                 </div>

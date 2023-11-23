@@ -19,7 +19,7 @@ function BusList({busList, setBusList, buttonState, setButtonState,
         // console.log(list)
         // setRouteCd(list.routeCd)
         if(list) {
-            await axios.post(`http://127.0.0.1:5300/bus/detail/${list.routeCd}`)
+            await axios.post(`${process.env.REACT_APP_API_SERVAR_ADRESS}/api/bus/detail/${list.routeCd}`)
             .then(res => {
                 const busDatas = res.data.elements[0].elements[1].elements
                 // console.log(busDatas)
@@ -52,7 +52,7 @@ function BusList({busList, setBusList, buttonState, setButtonState,
             .catch(function(error){
                 console.log(error.message)
             })
-            await axios.post(`http://127.0.0.1:5300/bus/positionInfo/${list.routeCd}`)
+            await axios.post(`${process.env.REACT_APP_API_SERVAR_ADRESS}/api/bus/positionInfo/${list.routeCd}`)
             .then(res => {
                 // console.log(res)
                 const busPositonDatas = res.data.elements[0].elements[1].elements

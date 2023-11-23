@@ -1,7 +1,11 @@
 .suikaGame {
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    background-image: url('../../public/images/warterMelonBackground.png');
+    background-size: contain;
 }
 .gameScoreBoard {
     width: 300px;

@@ -1,29 +1,31 @@
 import React, {useState, useEffect} from 'react';
 import './App.css';
+import { useCookies } from 'react-cookie';
 import {Routes, Route} from "react-router-dom"
 import { Home, Play, Work, Food, News, BackHome, Lounge, Register, Modify, SuikaGame} from './pages'
 
 function App() {
-     const [userInfo, setUserInfo] = useState({ name: 'guest', keyword : '', address : '대전광역시 서구 둔산동'})
-    // const [userInfo, setUserInfo] = useState()
-     useEffect( () => {
-        fetch('http://127.0.0.1:5300/user/isLogin', {
-          method: 'GET',
-          headers: { 
-          'Content-Type': 'application/json',
-          },
-          credentials : 'include'
-
-        })
-        .then(res => res.json())
-        .then((res) => {
-          // if(res.code === 401) {
-          //   setUserInfo({ name: 'guest' , keyword : '', address : '대전광역시 서구 둔산동'})
-          // }
-          if(res.code === 200){
-            setUserInfo({ name: res.name , keyword : res.keyword, address : res.address})
-          }
-        })
+    const [userInfo, setUserInfo] = useState({ name: 'guest', keyword : '', address : '대전광역시 서구 둔산동'})
+    const [cookies, setCookie, removeCookie] = useCookies(['accessToken']);
+    const isLoginCheck = async() => {
+      await fetch('http://127.0.0.1:5300/user/isLogin', {
+        method: 'GET',
+        headers: { 
+        'Content-Type': 'application/json',
+        },
+        credentials : 'include'
+      })
+      .then(res => res.json())
+      .then((res) => {
+        if(res.code === 200){
+          setUserInfo({ name: res.name , keyword : res.keyword, address : res.address})
+        }
+      })
+    }
+    useEffect( () => {
+      if(cookies.accessToken !== undefined) {
+        isLoginCheck()
+      }
      }, [])
      
 

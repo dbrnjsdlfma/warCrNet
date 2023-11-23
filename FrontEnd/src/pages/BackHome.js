@@ -4,13 +4,8 @@ import { Header , BusAreaMap,
 import '../styles/BackHome.css'
 import axios from 'axios'
 import BusMap from "../components/BusMap";
-import DefaultMap from "../components/DefaultMap"
-import BusSearch from "../components/BusSearch";
-const { kakao } = window;
 function BackHome({userInfo}){
-    const [ userAddress , setUserAddress ] = useState([])
-    const [ busAreaData , setBusAreaData ] = useState([])
-    const [ busList , setBusList ] = useState([])
+    // const [ userAddress , setUserAddress ] = useState([])
     const [ busAreaDetail , setBusAreaDetail] = useState([])
     const [ busPositon , setBusPositon ] = useState([])
     const [ busListState, setBusListState ] = useState(true)
@@ -19,6 +14,7 @@ function BackHome({userInfo}){
     const [ busAreaMapState, setBusAreaMapState ] = useState(false)
     const [ busPositonMapState ,setBusPositonMapState] = useState(false)
     const [ buttonState, setButtonState ] = useState(false)
+
     // useEffect( () => {
     //     const geo = new kakao.maps.services.Geocoder();
     //     let startAddressIndex = userInfo.address.lastIndexOf('동')
@@ -36,19 +32,20 @@ function BackHome({userInfo}){
     //         }
     //     })
     // },[userInfo])
+
+    const [ busList , setBusList ] = useState([])
     const busListApi = async() => {
-       await axios.get('http://127.0.0.1:5300/bus')
+       await axios.get(`${process.env.REACT_APP_API_SERVAR_ADRESS}/api/bus`)
         .then(res => {
-            // console.log(res)
             setBusList(res.data.busData)
         })
     }
+
+    const [ busAreaData , setBusAreaData ] = useState([])
     const busAreaListAPI = async() => {
-        await axios.get('http://127.0.0.1:5300/busArea')
+        await axios.get(`${process.env.REACT_APP_API_SERVAR_ADRESS}/api/busArea`)
         .then(res => {
-            // console.log(res)
             setBusAreaData(res.data.BusAreas)
-            // setBusAreaData(res.data.BusArealist)
         })
     }
     useEffect(() => {
@@ -77,7 +74,7 @@ function BackHome({userInfo}){
     const keywordSearch = (e) => {
         const searchKeyword = document.querySelector('.keyword')
         if(searchKeyword.value !== null && searchKeyword.value !== '') {
-            axios.post(`http://127.0.0.1:5300/busArea/search/${searchKeyword.value}`)
+            axios.post(`${process.env.REACT_APP_API_SERVAR_ADRESS}/api/busArea/search/${searchKeyword.value}`)
             .then(res => {
                 console.log(res)
             })
@@ -121,8 +118,7 @@ function BackHome({userInfo}){
                                         mapState={mapState} busAreaMapState={busAreaMapState}/> : '' } */}
                 {mapState ? <BusMap busPositon={busPositon} busPositonMapState={busPositonMapState} buttonState={buttonState}/>                 
                                 :
-                            <BusAreaMap userInfo={userAddress} busAreaDetail={busAreaDetail}
-                                    mapState={mapState} busAreaMapState={busAreaMapState}/>        }
+                            <BusAreaMap busAreaDetail={busAreaDetail} mapState={mapState} busAreaMapState={busAreaMapState}/> }
             </div>
             <Footer userInfo={userInfo}/>
        </>

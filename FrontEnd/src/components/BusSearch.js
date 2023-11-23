@@ -5,7 +5,7 @@ function BusSearch({setBusList}) {
     const searchBus = (inputValue) => {
         // const inputValue = event.target.value
         if(inputValue !== '') {
-            axios.post(`http://127.0.0.1:5300/bus/searchBus/${inputValue}`)
+            axios.post(`${process.env.REACT_APP_API_SERVAR_ADRESS}/api/bus/searchBus/${inputValue}`)
             .then(res => {
                 if(res.status === 200) {
                     setBusList(res.data.busData)
@@ -14,7 +14,7 @@ function BusSearch({setBusList}) {
                 }
             })
         } else {
-            axios.get(`http://127.0.0.1:5300/bus`)
+            axios.get(`${process.env.REACT_APP_API_SERVAR_ADRESS}/api/bus`)
             .then(res => {
                 setBusList(res.data.busData)
             })

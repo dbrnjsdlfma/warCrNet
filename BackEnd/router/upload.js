@@ -50,7 +50,6 @@ router.get('/', isAuth, expressAsyncHandler( async(req, res, next) => {
             } else {
                 const ImageData = data.toString('base64')
                 res.status(200).json({ code : 200 , ImageData, imageFileType})
-                console.log('3000번 포트로 보냄')
             }
         })
     }

@@ -35,15 +35,15 @@ const busAreaRouter = require('./router/busAreas')
 const busRouter = require('./router/bus')
 
 // 라우터 적용
-app.use('/user', loginRouter)
-app.use('/food', foodRouter)
+app.use('/api/user', loginRouter)
+app.use('/api/food', foodRouter)
 app.use('/lounge', loungeChat)
 app.use('/loungeComment', loungeComment)
 app.use('/api/schedule', scheduleRoute);
 app.use('/api/todo', todoRoute)
 app.use('/api/upload', uploadRouter)
-app.use('/busArea', busAreaRouter)
-app.use('/bus' , busRouter)
+app.use('/api/busArea', busAreaRouter)
+app.use('/api/bus' , busRouter)
 
 // 에러처리 미들웨어
 app.get('/error', (req, res, next) => {
@@ -58,6 +58,6 @@ app.use((err, req, res, next) => { // 서버내부 오류처리
     console.error(err.stack)
     res.status(500).send('Internal Server Error')
 })
-app.listen(port, '0.0.0.0', () => {
+app.listen(port, () => {
     console.log(`server is runnig on port ${port}...`)
 })
