@@ -13,7 +13,7 @@ function PasswordSearchComponent({setLoginModalState}) {
         } else {
             axios({
                 method : 'post' ,
-                url : 'http://127.0.0.1:5300/user/searchPassword' ,
+                url : `${process.env.REACT_APP_API_SERVAR_ADRESS}/api/user/searchPassword` ,
                 data : {
                     userId : email ,
                 } ,

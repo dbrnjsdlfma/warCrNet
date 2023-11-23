@@ -15,12 +15,12 @@
    z-index: 10; */
 }
 
-.main-icons:nth-child(5){ /* 설정 아이콘 위치설정 */
+.main-icons:nth-child(8){ /* 설정 아이콘 위치설정 */
    position: absolute;
    top: 0;
    right: 10%;
 }
-.main-icons:nth-child(6){ /* 로그인 아이콘 위치설정 */
+.main-icons:nth-child(9){ /* 로그인 아이콘 위치설정 */
    position: absolute;
    top: 0;
    right: 5%;

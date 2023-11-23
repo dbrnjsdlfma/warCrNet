@@ -24,9 +24,9 @@ function BusAreaItem({busStateList}) {
     // console.log(busList)
     return (
         <div className="busAreaItemContainer">
-            {busStateList.map((item)=> {
+            {busStateList.map((item, index)=> {
                 return (
-                    <div key={item[2].value} className='busAreaItem'>
+                    <div key={item[3].value} className='busAreaItem'>
                          <div className='busAreaItem-busRoute'>
                             <span className={`bus-type Tp${item[4].value}`}>{item[3].value}</span>
                             <p><strong>{item[1].value}</strong>분</p>

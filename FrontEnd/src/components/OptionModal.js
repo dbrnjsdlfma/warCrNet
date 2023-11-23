@@ -6,10 +6,8 @@ function OptionModal({state, optionModalStateChange, userInfo}) {
     const [fileName, setFileName] = useState('')
     const [fileURL, setFileURL] = useState('')
     const [uploadFile , setUploadFile] = useState()
-    console.log(userInfo)
     const fileUpload = (e) => { // 배경화면 바꿀 파일 업로드 함수
           const file = e.target.files[0]
-          console.log(file)
           if(file) {
             setUploadFile(file)
             const fileSrc = URL.createObjectURL(file)
@@ -18,7 +16,6 @@ function OptionModal({state, optionModalStateChange, userInfo}) {
     }
     const backgroundApply = () => { // 업로드된 파일로 배경화면 바꾸기 함수
         const home = document.querySelector('.Home')
-        console.log(fileURL)
         home.style.background = `url(${fileURL})`
         home.style.backgroundSize = 'cover'
     }
@@ -30,7 +27,7 @@ function OptionModal({state, optionModalStateChange, userInfo}) {
         e.preventDefault()
         const formData = new FormData()
         formData.append('img' , e.target[0].files[0])
-        await axios.put('http://127.0.0.1:5300/api/upload' , formData ,
+        await axios.put(`${process.env.REACT_APP_API_SERVAR_ADRESS}/api/upload` , formData ,
         {
             headers: {
                 "Content-Type": "multipart/form-data"

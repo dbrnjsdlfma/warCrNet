@@ -38,7 +38,7 @@ function Register(){
       setErrorInputData({ err : 'passwordMatching', message : '비밀번호가 다릅니다.'});
       return ;
     } else {
-        fetch('http://127.0.0.1:5300/user/register', {
+        fetch(`${process.env.REACT_APP_API_SERVAR_ADRESS}/api/user/register`, {
           method : 'POST',
           headers : {
             'Content-Type' : 'application/json'

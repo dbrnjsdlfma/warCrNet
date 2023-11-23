@@ -41,7 +41,7 @@ function Home({setUserInfo, userInfo}){
 
     useEffect ( () => {
         if(loginToken) {
-            axios.get('http://127.0.0.1:5300/api/upload',{ withCredentials : true })
+            axios.get(`${process.env.REACT_APP_API_SERVAR_ADRESS}/api/upload`,{ withCredentials : true })
             .then(res => {
                 // const data = res.data.data.data
                 // const type = res.data.imageFileType

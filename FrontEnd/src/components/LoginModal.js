@@ -19,7 +19,7 @@ function LoginModal({loginModalStateChange ,setUserInfo , setLoginModalState}){
   const handleLogin = async (event) => {
     event.preventDefault();
 
-    await fetch('http://127.0.0.1:5300/user/login', {
+    await fetch(`${process.env.REACT_APP_API_SERVAR_ADRESS}/api/user/login`, {
       method: 'POST',
       headers: { 
         'Content-Type': 'application/json', 
@@ -33,7 +33,6 @@ function LoginModal({loginModalStateChange ,setUserInfo , setLoginModalState}){
     })
     .then(res => res.json())
     .then((res) => {
-      console.log(res)
       if(res.code === 200){
         setCookie('accessToken', res.token, { 
           path: '/',
