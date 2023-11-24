@@ -7,23 +7,23 @@
 
 ## 프로젝트 기간
 
-2023-11-01 ~ 현재 진행중
+> 2023-11-01 ~ 현재 진행중
 
 ## 개발 환경
 
-FrontEnd
+> FrontEnd
 
 <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> <img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white"> <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"> <img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black">
 
-BackEnd
+> BackEnd
 
 <img src="https://img.shields.io/badge/node.js-339933?style=for-the-badge&logo=Node.js&logoColor=white"> <img src="https://img.shields.io/badge/express-000000?style=for-the-badge&logo=express&logoColor=white">
  
-DataBase
+> DataBase
 
 <img src="https://img.shields.io/badge/mongoDB-47A248?style=for-the-badge&logo=MongoDB&logoColor=white">
 
-형상관리
+> 형상관리
 
 <img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white"> <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
 
@@ -42,6 +42,18 @@ https://github.com/dbrnjsdlfma/warCrNet/assets/41029202/2286dac6-1dae-4c6d-bdf5-
 
 
 3.공공데이터포털 버스 API를 활용한 실시간 버스 / 버스정류장 정보 검색 기능
+> 버스 정보 및 실시간 위치 / 검색
+
+https://github.com/dbrnjsdlfma/warCrNet/assets/41029202/b2fc5d17-5771-43d8-9555-95ac1a73084a
+
+
+> 버스정류장 정보 및 검색
+
+
+https://github.com/dbrnjsdlfma/warCrNet/assets/41029202/f1c9d191-5c8f-467e-9816-2b9eceaa3168
+
+
+
 
 
 
