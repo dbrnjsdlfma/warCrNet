@@ -27,6 +27,13 @@
 
 <img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white"> <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
 
+## 사용 방법
+1.**프로젝트 설치**
+> **프로젝트를 다운 받을 경로로 이동한 뒤 다음 명령어 입력**
+```
+git clone 
+```
+
 ## 구현 기능
 
 **1.배경화면 바꾸기**
