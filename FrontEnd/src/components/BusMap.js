@@ -68,13 +68,13 @@ function BusMap({busPositon, busPositonMapState, buttonState}) {
                                                 lat : items[5].LAT ,
                                                 lng : items[6].LOT
                                             }}
-                                            image={{
-                                                src: "./../images/busMaker.png",
-                                                size: {
-                                                    width: 30,
-                                                    height: 35
-                                                    },
-                                                }}
+                                            // image={{
+                                            //     src: "./../images/busMaker.png",
+                                            //     size: {
+                                            //         width: 30,
+                                            //         height: 35
+                                            //         },
+                                            //     }}
                                         
                                         />
                                         {/* <CustomOverlayMap
