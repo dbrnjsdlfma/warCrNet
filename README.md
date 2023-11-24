@@ -31,6 +31,10 @@ DataBase
 
 1.파일 업로드 기능
 
+
+https://github.com/dbrnjsdlfma/warCrNet/assets/41029202/c061e443-abf6-4432-8e64-1d482aa94577
+
+
 2.간단한 미니게임(수박게임)
 
 3.공공데이터포털 버스 API를 활용한 실시간 버스 / 버스정류장 정보 검색 기능
