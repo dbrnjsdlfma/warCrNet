@@ -29,13 +29,17 @@ DataBase
 
 ## 구현 기능
 
-1.파일 업로드 기능
+1.배경화면 바꾸기
 
 
-https://github.com/dbrnjsdlfma/warCrNet/assets/41029202/c061e443-abf6-4432-8e64-1d482aa94577
+https://github.com/dbrnjsdlfma/warCrNet/assets/41029202/4094caac-234d-4b0a-bbd2-be415bcd08e7
 
 
 2.간단한 미니게임(수박게임)
+
+
+https://github.com/dbrnjsdlfma/warCrNet/assets/41029202/2286dac6-1dae-4c6d-bdf5-eb7281c37abb
+
 
 3.공공데이터포털 버스 API를 활용한 실시간 버스 / 버스정류장 정보 검색 기능
 
