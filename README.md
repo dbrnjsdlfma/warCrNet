@@ -31,9 +31,20 @@
 1.**프로젝트 설치**
 > **프로젝트를 다운 받을 경로로 이동한 뒤 다음 명령어 입력**
 ```
-git clone 
+git clone https://github.com/dbrnjsdlfma/warCrNet.git
 ```
 
+2.**프론트 엔드**
+>**패키지 설치**
+```
+cd FrontEnd
+npm install
+```
+
+>**실행**
+```
+npm start
+```
 ## 구현 기능
 
 **1.배경화면 바꾸기**
