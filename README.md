@@ -27,6 +27,41 @@
 
 <img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white"> <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
 
+## 사용 방법
+
+1.**프로젝트 설치**
+> **프로젝트를 다운 받을 경로로 이동한 뒤 다음 명령어 입력**
+```
+git clone https://github.com/dbrnjsdlfma/warCrNet.git
+```
+
+2.**몽고디비 데이터 입력**
+> **BackEnd/jsonData폴더에 있는 json파일 몽고디비 collection에 맞게 입력**
+
+3.**프론트 엔드**
+>**패키지 설치**
+```
+cd FrontEnd
+npm install
+```
+
+>**실행**
+```
+npm start
+```
+
+4.**백 엔드**
+>**패키지 설치**
+```
+cd BackEnd
+npm install
+```
+
+>**실행**
+```
+nodemon
+```
+
 ## 구현 기능
 
 **1.배경화면 바꾸기**
