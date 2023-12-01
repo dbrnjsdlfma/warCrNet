@@ -2,8 +2,6 @@ import React, { useEffect, useState } from 'react'
 import '../styles/BusAreaItem.css'
 function BusAreaItem({busStateList}) {
     const [ busList , setBusList ] = useState([])
-    // console.log(busStateList)
-    // console.log(busStateList)
     // useEffect(() => {
     //     const array = []
     //     busStateList.map((list)=> {

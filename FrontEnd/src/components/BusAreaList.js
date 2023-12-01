@@ -11,7 +11,6 @@ function BusAreaList({busAreaData, setBusAreaData, busAreaPosition}) {
         axios.get(`${process.env.REACT_APP_API_SERVAR_ADRESS}/api/busArea/busList/${item.BUS_NODE_ID}`)
         .then(res => {
             const busDatas = res.data.elements[0].elements[1].elements
-            // console.log(busDatas)
             const array = []
             busDatas.map( (item) => {
                 // console.log(item)
@@ -29,7 +28,6 @@ function BusAreaList({busAreaData, setBusAreaData, busAreaPosition}) {
                 })
                 // return array
             })
-            // console.log(array)
             let num = 6
             const sliceArray = []
             for(let i=0; i<array.length; i+=num ) {

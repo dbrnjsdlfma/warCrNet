@@ -92,25 +92,13 @@ function BusDetail({BusData, busPositionInfoList, upboundBusDetailList, downBusD
                 <div className="bus-detail-list">
                     {!buttonState ? 
                         <ul>
-                            {upboundBusDetailList.map((items, index) => {
-                                const array = items.map((item, index) => {
-                                    if(index === 1) {
-                                        var name = item.value
-                                    }
-                                    return name
-                                })
-                                return <BusItem key={items[0].value} items={items} array={array} />
+                            {upboundBusDetailList.map((items) => {
+                                return <BusItem key={items[0].value} items={items} />
                             })}
                         </ul> : 
                         <ul>
                             {downBusDetailList.map((items) => {
-                                const array = items.map((item, index) => {
-                                    if(index === 1) {
-                                        var name = item.value
-                                    }
-                                    return name
-                                })
-                                return <BusItem key={items[0].value} items={items} array={array} />
+                                return <BusItem key={items[0].value} items={items} />
                             })}
                         </ul>
                     }

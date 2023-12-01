@@ -1,6 +1,6 @@
 import React from "react";
 
-function BusItem({items, array}) {
+function BusItem({items}) {
     return (
         <li key={items[1].value}>
             <div className="busLine"></div>
@@ -9,7 +9,7 @@ function BusItem({items, array}) {
                 directions_bus
             </span>
             <div className="busDescription">
-                <span className="busAreaName">{array[1]}</span>
+                <span className="busAreaName">{items[1].value}</span>
                 <span className="busAreaRouteCd">{items[5].value}</span>
             </div>
         </li>

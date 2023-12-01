@@ -16,7 +16,6 @@ function BusList({busList, setBusList, buttonState, setButtonState,
     const [downBusDetailList, setDownBusDetailList] = useState([])
 
     const showDiscription = async(e, list, index) => {
-        // console.log(list)
         // setRouteCd(list.routeCd)
         if(list) {
             await axios.post(`${process.env.REACT_APP_API_SERVAR_ADRESS}/api/bus/detail/${list.routeCd}`)

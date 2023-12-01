@@ -6,6 +6,7 @@ import GameScoreBoard from '../components/GameScoreBoard'
 import '../styles/SuikaGame.css'
 function SuikaGame() {
     const canvasRef = useRef(null);
+
     // const totalScore = useRef<number>(0);
     const [totalScore , setTotalScore] = useState(0)
     useEffect( () => {

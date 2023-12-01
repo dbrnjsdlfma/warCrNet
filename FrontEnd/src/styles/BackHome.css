@@ -12,7 +12,7 @@
 
 }
 .backHome-list {
-    height: 700px;
+    height: calc(100vh - 255px);
     display: flex;
     flex-direction: column;
     overflow: auto;
